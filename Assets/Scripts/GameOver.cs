@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
     {
         if (HP == 0)
         {
-            SceneScript.Instance.LoadGameOverScene("");
+            SceneScript.Instance.LoadGameOverScene("GameOver");
         }
     }
 
