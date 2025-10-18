@@ -5,7 +5,7 @@ public class Button : MonoBehaviour
 {
     public void OnGameStart()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("StageSelect");
         print(222);
     }
 
