@@ -7,18 +7,31 @@ public class Button : MonoBehaviour
     public void OnGameStart()
     {
         SceneManager.LoadScene("StageSelect");
-        print(222);
+        print("ステージセレクト画面へ移行");
     }
 
-    public void OnExit()
+    public void OnExit(string nowScene)
     {
-        Application.Quit();
-        print(111);
+        switch (nowScene)
+        {
+            case ("Title"):
+                Application.Quit();
+                print(111);
+                break;
+            case ("StageSelect"):
+                SceneManager.LoadScene("Title");
+                print("タイトルに移行");
+                break;
+            case ("GameScene"):
+                SceneManager.LoadScene("Title");
+                print("タイトルに移行");
+                break;
+        }
     }
 
     public void OnDecisionStage()
     {
         SceneManager.LoadScene("GameScene");
-;       print("ゲームシーンへ移行");
+        print("ゲームシーンへ移行");
     }
 }

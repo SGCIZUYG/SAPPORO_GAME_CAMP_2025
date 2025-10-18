@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerDamage : MonoBehaviour
 {
-    [SerializeField,Header("ƒvƒŒƒCƒ„[‚Ì‘Ì—Í")] private float _playerHP = 0.0f;
+    public int _damageCount = 0;
 
     private void FixedUpdate()
     {
