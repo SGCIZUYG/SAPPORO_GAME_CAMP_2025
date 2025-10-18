@@ -1,11 +1,16 @@
 using UnityEngine;
 
-
 public class GameOver : MonoBehaviour
 {
-   if(HP == 0) 
+    public int HP = 0;
+    
+    void Update()
+    {
+        if (HP == 0)
         {
-        LoadGameOverScene();
+            SceneScript.Instance.LoadGameOverScene("");
         }
+    }
+
 }
 

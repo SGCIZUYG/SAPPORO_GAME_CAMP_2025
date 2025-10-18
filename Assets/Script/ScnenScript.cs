@@ -3,54 +3,53 @@ using UnityEngine.SceneManagement;
 
 public class SceneScript : MonoBehaviour
 {
-    
-    public static SceneLoader Instance { get; private set; }
 
-private void Awake()
-{
-    
-    if (Instance != null && Instance != this)
+    public static SceneScript Instance { get; private set; }
+
+    private void Awake()
     {
-        
-        Destroy(gameObject);
-        return;
+
+        if (Instance != null && Instance != this)
+        {
+
+            Destroy(gameObject);
+            return;
+        }
+
+
+        Instance = this;
+
+
+        DontDestroyOnLoad(gameObject);
     }
 
-    
-    Instance = this;
 
-    
-    DontDestroyOnLoad(gameObject);
+    public void LoadGameScene(string Game)
+    {
+
+        Debug.Log("シーン「" + Game + "」への遷移を実行します。");
+        SceneManager.LoadScene(Game);
+    }
+
+    public void LoadTitleScene(string Title)
+    {
+
+        Debug.Log("シーン「" + Title + "」への遷移を実行します。");
+        SceneManager.LoadScene(Title);
+    }
+
+    public void LoadGameOverScene(string GameOver)
+    {
+
+        Debug.Log("シーン「" + GameOver + "」への遷移を実行します。");
+        SceneManager.LoadScene(GameOver);
+    }
+
+    public void LoadGameClearScene(string GameClear)
+    {
+
+        Debug.Log("シーン「" + GameClear + "」への遷移を実行します。");
+        SceneManager.LoadScene(GameClear);
+    }
 }
 
-
-    public void LoadGameScene(string GameScene)
-    {
-   
-    Debug.Log("シーン「" + GameScene + "」への遷移を実行します。");
-    SceneManager.LoadScene(GameScene);
-    }
-
-    public void LoadTitleScene(string TitleScene)
-    {
-
-        Debug.Log("シーン「" + TitleScene + "」への遷移を実行します。");
-        SceneManager.LoadScene(TitleScene);
-    }
-
-    public void LoadGameOverScene(string GameOverScene)
-    {
-
-        Debug.Log("シーン「" + GameOverScene + "」への遷移を実行します。");
-        SceneManager.LoadScene(GameOverScene);
-    }
-
-    public void LoadGameClearScene(string GameClearScene)
-    {
-
-        Debug.Log("シーン「" + GameClearScene + "」への遷移を実行します。");
-        SceneManager.LoadScene(GameClearScene);
-    }
-
-
-}
