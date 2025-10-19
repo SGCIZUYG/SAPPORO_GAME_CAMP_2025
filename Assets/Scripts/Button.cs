@@ -22,7 +22,11 @@ public class Button : MonoBehaviour
                 SceneManager.LoadScene("Title");
                 print("タイトルに移行");
                 break;
-            case ("GameScene"):
+            case ("GameClear"):
+                SceneManager.LoadScene("Title");
+                print("タイトルに移行");
+                break;
+            case ("GameOver"):
                 SceneManager.LoadScene("Title");
                 print("タイトルに移行");
                 break;
