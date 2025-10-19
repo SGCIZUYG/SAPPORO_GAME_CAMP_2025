@@ -15,6 +15,11 @@ public class FukidasiSelect : MonoBehaviour
     [SerializeField] TextMeshProUGUI _mainTextObject;
     [SerializeField] MainTextController _mainTextController;
     private UserScriptManager _usManager = default;
+    private bool _fukidasiTap1 = false;
+    private bool _fukidasiTap2 = false;
+    private bool _fukidasiTap3 = false;
+    private bool _fukidasiTap4 = false;
+    private bool _fukidasiTap5 = false;
 
     List<string> word_1 = new List<string> { "君は本当に使えないな。", "君は本当に使えないな。", "君は本当に使えないな。" };
     List<string> word_2 = new List<string> { "休日出勤も前提で、他のメンバーは手を貸さない。君ならできるだろ？", "来月のプロジェクトの資料を全部作り直してもらう。休日出勤も前提で、他のメンバーは手を貸さない。", "来月のプロジェクトの資料を全部作り直してもらう。休日出勤も前提で、他のメンバーは手を貸さない。" };
@@ -51,20 +56,44 @@ public class FukidasiSelect : MonoBehaviour
         switch (click)
         {
             case 1:
-                _eDamage._damageCount++;
+                if (_fukidasiTap1 == true)
+                {
+                    _eDamage._damageCount++;
+                    count++;
+                }
                 break;
-            //case 2:
-            //    _eDamage._damageCount++;
-            //    break;
-            //case 3:
-            //    _pDamage._damageCount += 3;
-            //    break;
-            //case 4:
-            //    _eDamage._damageCount++;
-            //    break;
-            //case 5:
-            //    _pDamage._damageCount += 3;
-            //    break;
+            case 2:
+                if (_fukidasiTap2 == true)
+                {
+                    _eDamage._damageCount++;
+                    count++;
+                }
+              
+                break;
+            case 3:
+                if (_fukidasiTap3 == true)
+                {
+                    _pDamage._damageCount += 3;
+                    count++;
+                }
+               
+                break;
+            case 4:
+                if (_fukidasiTap4 == true)
+                {
+                    _eDamage._damageCount++;
+                    count++;
+                }
+               
+                break;
+            case 5:
+                if (_fukidasiTap5 == true)
+                {
+                    _pDamage._damageCount += 3;
+                    count++;
+                }
+         
+                break;
         }
     }
     public void OnFukidasiSelect(int fukidasiNum)
@@ -79,95 +108,134 @@ public class FukidasiSelect : MonoBehaviour
                     if (count == 1)
                     {
                         _mainTextObject.text = word_1[0];
-                        count++;
+                        
+                        _fukidasiTap1 = true;
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_1[1];
-                        count++;
+                        
+                        _fukidasiTap1 = true;
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_1[2];
-                        count++;
+                      
+                        _fukidasiTap1 = true;
                     }
-                  
+                   
                     break;
 
                 case 1:
                     if (count == 1)
                     {
                         _mainTextObject.text = word_2[0];
-                        count++;
+                      
+                        _fukidasiTap2 = true;
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_2[1];
-                        count++;
+                       
+                        _fukidasiTap2 = true;
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_2[2];
-                        count++;
+                       
+                        _fukidasiTap2 = true;
                     }
-                 
+                   
                     break;
 
                 case 2:
                     if (count == 1)
                     {
                         _mainTextObject.text = word_3[0];
-                        count++;
+
+                        _fukidasiTap1 = false;
+                        _fukidasiTap2 = false;
+                        _fukidasiTap4 = false;
+                        _fukidasiTap3 = true;
+                       
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_3[1];
-                        count++;
+
+                        _fukidasiTap1 = false;
+                        _fukidasiTap2 = false;
+                        _fukidasiTap4 = false;
+                        _fukidasiTap3 = true;
+                        
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_3[2];
-                        count++;
+
+                        _fukidasiTap1 = false;
+                        _fukidasiTap2 = false;
+                        _fukidasiTap4 = false;
+                        _fukidasiTap3 = true;
+                        
                     }
-                  
+                 
                     break;
 
                 case 3:
                     if (count == 1)
                     {
                         _mainTextObject.text = word_4[0];
-                        count++;
+                       
+                        _fukidasiTap4 = true;
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_4[1];
-                        count++;
+                      
+                        _fukidasiTap4 = true;
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_4[2];
-                        count++;
+                       
+                        _fukidasiTap4 = true;
                     }
-               
+                 
                     break;
 
                 case 4:
                     if (count == 1)
                     {
                         _mainTextObject.text = word_5[0];
-                        count++;
+
+                        _fukidasiTap1 = false;
+                        _fukidasiTap2 = false;
+                        _fukidasiTap4 = false;
+                        _fukidasiTap5 = true;
+                        
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_5[1];
-                        count++;
+
+                        _fukidasiTap1 = false;
+                        _fukidasiTap2 = false;
+                        _fukidasiTap4 = false;
+                        _fukidasiTap5 = true;
+                      
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_5[2];
-                        count++;
+
+                        _fukidasiTap1 = false;
+                        _fukidasiTap2 = false;
+                        _fukidasiTap4 = false;
+                        _fukidasiTap5 = true;
+                        
                     }
-                  
+                   
                     break;
             }
         }
