@@ -15,6 +15,7 @@ public class HPLost : MonoBehaviour
         if(_pDmageCount._damageCount == _hpNum)
         {
             _sp.color = Color.black;
+            print("ƒ_ƒ[ƒW‚ğó‚¯‚½");
         }
     }
 }
