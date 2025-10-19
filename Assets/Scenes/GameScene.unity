@@ -396,6 +396,7 @@ MonoBehaviour:
   _fukidasi4: {fileID: 2130224701}
   _fukidasi5: {fileID: 881398560}
   _eDamage: {fileID: 2082965930}
+  _mainTextObject: {fileID: 1280569141}
 --- !u!1 &77693460
 GameObject:
   m_ObjectHideFlags: 0

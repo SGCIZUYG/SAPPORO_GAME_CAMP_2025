@@ -9,10 +9,11 @@ public class MainTextController : MonoBehaviour
     [SerializeField] TextMeshProUGUI _mainTextObject;
     //[SerializeField] TextMeshProUGUI _mainTextNameObject;
     [SerializeField] GameObject obj;
-
+    public bool stopDisplayFunction;
 
     void Start()
     {
+        stopDisplayFunction = false;
         DisplayText();
     }
 
@@ -41,8 +42,11 @@ public class MainTextController : MonoBehaviour
     // テキストを表示
     public void DisplayText()
     {
-        string sentence = GameManager.Instance.userScriptManager.GetCurrentSentence();
-        _mainTextObject.text = sentence;
+        if (!stopDisplayFunction)
+        {
+            string sentence = GameManager.Instance.userScriptManager.GetCurrentSentence();
+            _mainTextObject.text = sentence;
+        }
         //_mainTextNameObject.text = sentence;
     }
 }
