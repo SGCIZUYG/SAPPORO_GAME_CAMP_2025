@@ -108,19 +108,24 @@ public class FukidasiSelect : MonoBehaviour
                     if (count == 1)
                     {
                         _mainTextObject.text = word_1[0];
-                        
+
+                        _fukidasiTap3 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap1 = true;
+                        
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_1[1];
-                        
+                        _fukidasiTap3 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap1 = true;
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_1[2];
-                      
+                        _fukidasiTap3 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap1 = true;
                     }
                    
@@ -130,19 +135,22 @@ public class FukidasiSelect : MonoBehaviour
                     if (count == 1)
                     {
                         _mainTextObject.text = word_2[0];
-                      
+                        _fukidasiTap3 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap2 = true;
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_2[1];
-                       
+                        _fukidasiTap3 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap2 = true;
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_2[2];
-                       
+                        _fukidasiTap3 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap2 = true;
                     }
                    
@@ -186,19 +194,22 @@ public class FukidasiSelect : MonoBehaviour
                     if (count == 1)
                     {
                         _mainTextObject.text = word_4[0];
-                       
+                        _fukidasiTap3 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap4 = true;
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_4[1];
-                      
+                        _fukidasiTap3 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap4 = true;
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_4[2];
-                       
+                        _fukidasiTap3 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap4 = true;
                     }
                  
