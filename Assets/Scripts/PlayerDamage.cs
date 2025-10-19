@@ -9,13 +9,13 @@ public class PlayerDamage : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            _damageCount++;
+            _damageCount += 3;
         }
     }
 
     private void FixedUpdate()
     {
-        if(_damageCount >= 3)
+        if (_damageCount >= 3)
         {
             SceneManager.LoadScene("GameOver");
         }
