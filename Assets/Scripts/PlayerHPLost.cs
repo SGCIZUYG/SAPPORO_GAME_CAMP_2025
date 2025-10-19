@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HPLost : MonoBehaviour
+public class PlayerHPLost : MonoBehaviour
 {
     [SerializeField] private int _hpNum = 0;
     [SerializeField] private PlayerDamage _pDmageCount = default;
@@ -12,9 +12,9 @@ public class HPLost : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if(_pDmageCount._damageCount == _hpNum)
+        if (_pDmageCount._damageCount == _hpNum)
         {
-            _sp.color = Color.black;
+            _sp.enabled = false;
             print("É_ÉÅÅ[ÉWÇéÛÇØÇΩ");
         }
     }
