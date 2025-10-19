@@ -304,6 +304,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2063944339}
+        m_TargetAssemblyTypeName: SE_Manager, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &490795429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,6 +447,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: StageSelect
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063944339}
+        m_TargetAssemblyTypeName: SE_Manager, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1008052705
@@ -968,6 +992,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f20bd48a6ce49254fb3aa5bc7a99605e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Button
+--- !u!1001 &2063944338
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.89896
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658510249952324811, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201048346532036858, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+      propertyPath: m_Name
+      value: SE_Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+--- !u!114 &2063944339 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8718264920947076916, guid: 2f4451c2c61725643a9c35720f424b71, type: 3}
+  m_PrefabInstance: {fileID: 2063944338}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a54755b73fc6540ae427ac9fcbeab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SE_Manager
 --- !u!1 &2109758707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,3 +1150,4 @@ SceneRoots:
   - {fileID: 1989870487}
   - {fileID: 1046581182}
   - {fileID: 310520364}
+  - {fileID: 2063944338}
