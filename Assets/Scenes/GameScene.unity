@@ -584,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d580d1c3d124d46805bdcd9a1bd0de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HPLost
-  _hpNum: 1
+  _hpNum: 3
   _pDmageCount: {fileID: 2082965931}
 --- !u!1 &330585543
 GameObject:
@@ -905,7 +905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d580d1c3d124d46805bdcd9a1bd0de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HPLost
-  _hpNum: 2
+  _hpNum: 3
   _pDmageCount: {fileID: 2082965931}
 --- !u!1 &410087039
 GameObject:

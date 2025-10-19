@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -40,11 +41,15 @@ public class EnemyDamage : MonoBehaviour
                     _enemyPause2.SetActive(false);
                     _enemyPause3.SetActive(true);
                     enemyPauseNum++;
-                    break;
-                case 4:
-                    SceneManager.LoadScene("GameClear");
+                    StartCoroutine(Load());
                     break;
             }
         }
+    }
+
+    IEnumerator Load()
+    {
+        yield return new WaitForSecondsRealtime(1.0f);
+        SceneManager.LoadScene("GameClear");
     }
 }

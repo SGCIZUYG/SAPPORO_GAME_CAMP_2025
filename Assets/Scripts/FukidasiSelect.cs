@@ -21,11 +21,11 @@ public class FukidasiSelect : MonoBehaviour
     private bool _fukidasiTap4 = false;
     private bool _fukidasiTap5 = false;
 
-    List<string> word_1 = new List<string> { "君は本当に使えないな。", "君は本当に使えないな。", "君は本当に使えないな。" };
-    List<string> word_2 = new List<string> { "休日出勤も前提で、他のメンバーは手を貸さない。君ならできるだろ？", "来月のプロジェクトの資料を全部作り直してもらう。休日出勤も前提で、他のメンバーは手を貸さない。", "来月のプロジェクトの資料を全部作り直してもらう。休日出勤も前提で、他のメンバーは手を貸さない。" };
-    List<string> word_3 = new List<string> { "じゃあ、やれないなら代わり探すけど。どうする？", "じゃあ、やれないなら代わり探すけど。どうする？", "じゃあ、やれないなら代わり探すけど。どうする？" };
-    List<string> word_4 = new List<string> { "君のそれじゃ、将来どうなるか分からないからな。", "君のそれじゃ、将来どうなるか分からないからな。", "君のそれじゃ、将来どうなるか分からないからな。" };
-    List<string> word_5 = new List<string> { "逃げるな、ちゃんとついてこい。分かったな？", "逃げるな、ちゃんとついてこい。分かったな？", "逃げるな、ちゃんとついてこい。分かったな？" };
+    List<string> word_1 = new List<string> { "ほら、「資料の提出が遅れてる」「チェックが甘い」って、何度言ったらわかるんだ。君は本当に使えないな。", "ほら、「資料の提出が遅れてる」「チェックが甘い」って、何度言ったらわかるんだ。君は本当に使えないな。", "ほら、「資料の提出が遅れてる」「チェックが甘い」って、何度言ったらわかるんだ。君は本当に使えないな。" };
+    List<string> word_2 = new List<string> { "それからな、君にはちょっと“特別な任務”を任せる。来月のプロジェクトの資料を全部作り直してもらう。休日出勤も前提で、他のメンバーは手を貸さない。君ならできるだろ？", "それからな、君にはちょっと“特別な任務”を任せる。来月のプロジェクトの資料を全部作り直してもらう。休日出勤も前提で、他のメンバーは手を貸さない。君ならできるだろ？", "それからな、君にはちょっと“特別な任務”を任せる。来月のプロジェクトの資料を全部作り直してもらう。休日出勤も前提で、他のメンバーは手を貸さない。君ならできるだろ？" };
+    List<string> word_3 = new List<string> { "準備時間？そんなもの言い訳だ。君くらいの役職なら、そんなの当たり前でしょ。じゃあ、やれないなら代わり探すけど。どうする？", "準備時間？そんなもの言い訳だ。君くらいの役職なら、そんなの当たり前でしょ。じゃあ、やれないなら代わり探すけど。どうする？", "準備時間？そんなもの言い訳だ。君くらいの役職なら、そんなの当たり前でしょ。じゃあ、やれないなら代わり探すけど。どうする？" };
+    List<string> word_4 = new List<string> { "あとさ、昨日の飲み会で君、あまり発言なかったけど何を考えてたの？いつもぼーっとしてるだけじゃ、チームにも迷惑かかるんだよ。もっと積極的に意見出せるようになった方がいい。君のそれじゃ、将来どうなるか分からないからな。", "あとさ、昨日の飲み会で君、あまり発言なかったけど何を考えてたの？いつもぼーっとしてるだけじゃ、チームにも迷惑かかるんだよ。もっと積極的に意見出せるようになった方がいい。君のそれじゃ、将来どうなるか分からないからな。", "あとさ、昨日の飲み会で君、あまり発言なかったけど何を考えてたの？いつもぼーっとしてるだけじゃ、チームにも迷惑かかるんだよ。もっと積極的に意見出せるようになった方がいい。君のそれじゃ、将来どうなるか分からないからな。" };
+    List<string> word_5 = new List<string> { "いいか、君はこの会社で“若手のホープ”なんだから。期待してるからこそ厳しく言ってるんだ。逃げるな、ちゃんとついてこい。分かったな？", "いいか、君はこの会社で“若手のホープ”なんだから。期待してるからこそ厳しく言ってるんだ。逃げるな、ちゃんとついてこい。分かったな？", "いいか、君はこの会社で“若手のホープ”なんだから。期待してるからこそ厳しく言ってるんだ。逃げるな、ちゃんとついてこい。分かったな？" };
     int count;
 
     private void Start()
@@ -59,40 +59,40 @@ public class FukidasiSelect : MonoBehaviour
                 if (_fukidasiTap1 == true)
                 {
                     _eDamage._damageCount++;
-                    count++;
+                    count += 1;
                 }
                 break;
             case 2:
                 if (_fukidasiTap2 == true)
                 {
                     _eDamage._damageCount++;
-                    count++;
+                    count += 1;
                 }
-              
+
                 break;
             case 3:
                 if (_fukidasiTap3 == true)
                 {
                     _pDamage._damageCount += 3;
-                    count++;
+
                 }
-               
+
                 break;
             case 4:
                 if (_fukidasiTap4 == true)
                 {
                     _eDamage._damageCount++;
-                    count++;
+                    count += 1;
                 }
-               
+
                 break;
             case 5:
                 if (_fukidasiTap5 == true)
                 {
                     _pDamage._damageCount += 3;
-                    count++;
+
                 }
-         
+
                 break;
         }
     }
@@ -108,52 +108,63 @@ public class FukidasiSelect : MonoBehaviour
                     if (count == 1)
                     {
                         _mainTextObject.text = word_1[0];
-
+                        _fukidasiTap2 = false;
                         _fukidasiTap3 = false;
+                        _fukidasiTap4 = false;
                         _fukidasiTap5 = false;
                         _fukidasiTap1 = true;
-                        
+
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_1[1];
+                        _fukidasiTap2 = false;
                         _fukidasiTap3 = false;
+                        _fukidasiTap4 = false;
                         _fukidasiTap5 = false;
                         _fukidasiTap1 = true;
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_1[2];
+                        _fukidasiTap2 = false;
                         _fukidasiTap3 = false;
+                        _fukidasiTap4 = false;
                         _fukidasiTap5 = false;
                         _fukidasiTap1 = true;
                     }
-                   
+
                     break;
 
                 case 1:
                     if (count == 1)
                     {
                         _mainTextObject.text = word_2[0];
+                        _fukidasiTap1 = false;
                         _fukidasiTap3 = false;
+                        _fukidasiTap4 = false;
                         _fukidasiTap5 = false;
                         _fukidasiTap2 = true;
                     }
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_2[1];
+                        _fukidasiTap1 = false;
                         _fukidasiTap3 = false;
+                        _fukidasiTap4 = false;
                         _fukidasiTap5 = false;
                         _fukidasiTap2 = true;
                     }
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_2[2];
+                        _fukidasiTap1 = false;
                         _fukidasiTap3 = false;
+                        _fukidasiTap4 = false;
                         _fukidasiTap5 = false;
                         _fukidasiTap2 = true;
                     }
-                   
+
                     break;
 
                 case 2:
@@ -164,8 +175,9 @@ public class FukidasiSelect : MonoBehaviour
                         _fukidasiTap1 = false;
                         _fukidasiTap2 = false;
                         _fukidasiTap4 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap3 = true;
-                       
+
                     }
                     else if (count == 2)
                     {
@@ -174,8 +186,9 @@ public class FukidasiSelect : MonoBehaviour
                         _fukidasiTap1 = false;
                         _fukidasiTap2 = false;
                         _fukidasiTap4 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap3 = true;
-                        
+
                     }
                     else if (count == 3)
                     {
@@ -184,16 +197,19 @@ public class FukidasiSelect : MonoBehaviour
                         _fukidasiTap1 = false;
                         _fukidasiTap2 = false;
                         _fukidasiTap4 = false;
+                        _fukidasiTap5 = false;
                         _fukidasiTap3 = true;
-                        
+
                     }
-                 
+
                     break;
 
                 case 3:
                     if (count == 1)
                     {
                         _mainTextObject.text = word_4[0];
+                        _fukidasiTap1 = false;
+                        _fukidasiTap2 = false;
                         _fukidasiTap3 = false;
                         _fukidasiTap5 = false;
                         _fukidasiTap4 = true;
@@ -201,6 +217,8 @@ public class FukidasiSelect : MonoBehaviour
                     else if (count == 2)
                     {
                         _mainTextObject.text = word_4[1];
+                        _fukidasiTap1 = false;
+                        _fukidasiTap2 = false;
                         _fukidasiTap3 = false;
                         _fukidasiTap5 = false;
                         _fukidasiTap4 = true;
@@ -208,11 +226,13 @@ public class FukidasiSelect : MonoBehaviour
                     else if (count == 3)
                     {
                         _mainTextObject.text = word_4[2];
+                        _fukidasiTap1 = false;
+                        _fukidasiTap2 = false;
                         _fukidasiTap3 = false;
                         _fukidasiTap5 = false;
                         _fukidasiTap4 = true;
                     }
-                 
+
                     break;
 
                 case 4:
@@ -222,9 +242,10 @@ public class FukidasiSelect : MonoBehaviour
 
                         _fukidasiTap1 = false;
                         _fukidasiTap2 = false;
+                        _fukidasiTap3 = false;
                         _fukidasiTap4 = false;
                         _fukidasiTap5 = true;
-                        
+
                     }
                     else if (count == 2)
                     {
@@ -232,9 +253,10 @@ public class FukidasiSelect : MonoBehaviour
 
                         _fukidasiTap1 = false;
                         _fukidasiTap2 = false;
+                        _fukidasiTap3 = false;
                         _fukidasiTap4 = false;
                         _fukidasiTap5 = true;
-                      
+
                     }
                     else if (count == 3)
                     {
@@ -242,11 +264,12 @@ public class FukidasiSelect : MonoBehaviour
 
                         _fukidasiTap1 = false;
                         _fukidasiTap2 = false;
+                        _fukidasiTap3 = false;
                         _fukidasiTap4 = false;
                         _fukidasiTap5 = true;
-                        
+
                     }
-                   
+
                     break;
             }
         }

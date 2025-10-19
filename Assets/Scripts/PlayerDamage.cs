@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,11 +15,17 @@ public class PlayerDamage : MonoBehaviour
     //    }
     //}
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (_damageCount >= 3)
         {
-            SceneManager.LoadScene("GameOver");
+            StartCoroutine(Load());
         }
+    }
+
+    IEnumerator Load()
+    {
+        yield return new WaitForSecondsRealtime(1.0f);
+        SceneManager.LoadScene("GameOver");
     }
 }
