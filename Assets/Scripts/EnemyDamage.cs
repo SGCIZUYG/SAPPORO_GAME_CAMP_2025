@@ -24,7 +24,6 @@ public class EnemyDamage : MonoBehaviour
     {
         if (_damageCount >= 1)
         {
-            print("1111");
             switch (_damageCount)
             {
                 case 1:
