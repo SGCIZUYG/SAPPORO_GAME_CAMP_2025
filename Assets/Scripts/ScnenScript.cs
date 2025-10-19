@@ -31,6 +31,14 @@ public class SceneScript : MonoBehaviour
         SceneManager.LoadScene(Game);
     }
 
+    public void LoadGameSelectScene(string GameSelect)
+    {
+
+        Debug.Log("シーン「" + GameSelect + "」への遷移を実行します。");
+        SceneManager.LoadScene(GameSelect);
+    }
+
+
     public void LoadTitleScene(string Title)
     {
 
