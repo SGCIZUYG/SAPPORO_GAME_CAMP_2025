@@ -396,6 +396,7 @@ MonoBehaviour:
   _fukidasi4: {fileID: 2130224701}
   _fukidasi5: {fileID: 881398560}
   _eDamage: {fileID: 2082965930}
+  _pDamage: {fileID: 2082965931}
   _mainTextObject: {fileID: 1280569141}
   _mainTextController: {fileID: 1280569140}
 --- !u!1 &77693460
@@ -2602,7 +2603,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1568163931}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 42449763}
+        m_TargetAssemblyTypeName: FukidasiSelect, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1568163931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3306,6 +3319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b852fe9a7dda5fa4fba894265fba4bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDamage
+  _fk: {fileID: 0}
   _damageCount: 0
 --- !u!114 &2082965932
 MonoBehaviour:
