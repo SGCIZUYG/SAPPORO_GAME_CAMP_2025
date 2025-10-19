@@ -397,6 +397,7 @@ MonoBehaviour:
   _fukidasi5: {fileID: 881398560}
   _eDamage: {fileID: 2082965930}
   _mainTextObject: {fileID: 1280569141}
+  _mainTextController: {fileID: 1280569140}
 --- !u!1 &77693460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,6 +2184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainTextController
   _mainTextObject: {fileID: 1280569141}
   obj: {fileID: 0}
+  stopDisplayFunction: 0
 --- !u!114 &1280569141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2418,6 +2420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainTextController
   _mainTextObject: {fileID: 1472834387}
   obj: {fileID: 0}
+  stopDisplayFunction: 0
 --- !u!114 &1472834387
 MonoBehaviour:
   m_ObjectHideFlags: 0
