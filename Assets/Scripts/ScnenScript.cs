@@ -24,11 +24,11 @@ public class SceneScript : MonoBehaviour
     }
 
 
-    public void LoadGameScene(string Game)
+    public void LoadGameScene(string GameScene)
     {
 
-        Debug.Log("シーン「" + Game + "」への遷移を実行します。");
-        SceneManager.LoadScene(Game);
+        Debug.Log("シーン「" + GameScene + "」への遷移を実行します。");
+        SceneManager.LoadScene(GameScene);
     }
 
     public void LoadGameSelectScene(string GameSelect)
