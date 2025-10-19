@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyDamage : MonoBehaviour
 {
@@ -12,33 +13,35 @@ public class EnemyDamage : MonoBehaviour
 
     private void Start()
     {
-        _stanp.active = false;
-        _enemyPause0.active = true;
-        _enemyPause1.active = false;
-        _enemyPause2.active = false;
-        _enemyPause3.active = false;
+        _stanp.SetActive(false);
+        _enemyPause0.SetActive(true);
+        _enemyPause1.SetActive(false);
+        _enemyPause2.SetActive(false);
+        _enemyPause3.SetActive(false);
     }
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            _damageCount++;
             switch (enemyPauseNum)
             {
                 case 0:
-                    _enemyPause0.active = false;
-                    _enemyPause1.active = true;
+                    _enemyPause0.SetActive(false);
+                    _enemyPause1.SetActive(true);
                     enemyPauseNum++;
                     break;
                 case 1:
-                    _enemyPause1.active = false;
-                    _enemyPause2.active = true;
+                    _enemyPause1.SetActive(false);
+                    _enemyPause2.SetActive(true);
                     enemyPauseNum++;
                     break;
                 case 2:
-                    _enemyPause2.active = false;
-                    _enemyPause3.active = true;
+                    _enemyPause2.SetActive(false);
+                    _enemyPause3.SetActive(true);
                     enemyPauseNum++;
+                    break;
+                case 3:
+                    SceneManager.LoadScene("GameClear");
                     break;
             }
         }
